@@ -107,13 +107,11 @@ button{
     background-color: white;
     border-radius: 25px;
     border: none;
-    padding : 3%;
+    padding : 2% 4%;
     font-family: "JetBrains Mono", monospace;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
 }
-
-
 
 
 
@@ -453,3 +451,46 @@ footer {
     margin: 7px;
     padding: 4px 4px;
 }
+
+
+
+
+
+@media all and (max-width:1080px){
+
+    .menu ul {
+        display:flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    ul{
+        text-align: center;
+    }
+
+    #pannel_view{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .education{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #section_expérience{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big_text_photo{
+        bottom: 24%;
+    }
+    .bottom_elements{
+        flex-direction: column;
+    }
+
+    #bottom_text{
+        font-size: 4rem;
+    }
+}
+
