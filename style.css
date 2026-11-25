@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+#logo_header {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(26, 26, 26);
+    border-bottom: 2px solid rgba(252, 248, 248, 0.808);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0;
+    padding: 16px 20px;
+    list-style: none;
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+
+
+
+
+
+
+
+/* body */
+
+body{
+    background-color: #000000;
+    background-image: radial-gradient(#191919 3px, #000000 3px);
+    background-size: 50px 50px;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+/*section 1 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pannel_view{
+    background-color: rgb(29, 29, 29);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+#pannel_view h1 {
+    font-weight: 350;
+    font-size: 3rem;
+}
+
+.name-highlight {
+    background-color: white;
+    color: black;
+}
+
+#pannel_view p {
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+button{
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    padding : 3%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.7rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 2 */
+
+
+
+
+.education {
+    background-color: rgb(241, 241, 234);
+    padding: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes de même largeur */
+    grid-template-areas: 'title title'
+    'leftpart rightpart';
+    background-image: radial-gradient(#363636 3px, #000000 3px);
+    background-size: 50px 50px;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.section-title{
+    color: black;
+    grid-area: title;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-size: 3em;
+    text-align: center;
+}
+
+.parcours_sco{
+    font-family: "JetBrains Mono", monospace;
+    text-align: left;
+    padding-left: 1%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-weight: 170;
+}
+
+.my_parcours{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    grid-area:leftpart;
+}
+
+.liste_an{
+    --year-width: 3rem;
+    --year-gap: 1rem;
+    flex: 1; /* la liste blanche remplit toute la hauteur restante */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.liste_element{
+    flex: 1; /* les 3 lignes se partagent la hauteur à parts égales */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--year-gap);
+    padding: 1%;
+    text-align: left;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.1em;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.element{
+    flex: 0 0 var(--year-width);
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 1.5em;
+    font-weight: 280;
+}
+
+.photos{
+    background-color: black;
+    color:white;
+    padding: 4%;
+    margin: 4%;
+    font-family: "JetBrains Mono", monospace;
+    grid-area: rightpart;
+}
+
+.picture_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 3%;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.picture_element{
+    flex: 1; /* chaque image prend une part égale de la largeur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.3em;
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
+.picture_element img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/* section 3 */
+
+#section_expérience{
+    padding: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'title title'
+    'leftpart rightpart';
+}
+
+.black {
+    color: white;
+}
+
+
+.photo_pleine{
+    position: relative;
+    background-image: url("./images/noel.webp");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    margin: 4%;
+    grid-area: 'leftpart';
+}
+
+.big_text_photo{
+    position: absolute;
+    left: 3%;
+    bottom: 18%;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-size: 3rem;
+    color: white;
+}
+
+.text_xmas{
+    position: absolute;
+    left: 3%;
+    bottom: 7%;
+    font-family: "Instrument Serif", serif;
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+.xmas_button{
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+.photo_projects{
+    background-color: rgb(241, 241, 234);
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1em;
+    font-weight: 50;
+    text-align: left;
+    grid-area: 'rightpart';
+}
+
+#project_text{
+    padding-left: 4%;
+    font-weight: 190;
+}
+.column_image{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    border: solid 1px rgb(83, 82, 82);
+    color: white;
+    padding: 4%;
+    flex: 1;
+
+}
+
+.big_text_aside{
+    font-family: "Instrument Serif", serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.small_text_aside{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+.image_list{
+    width: 20%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ici on passe au footer. */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color : rgb(65, 65, 65);
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: "Bitcount Grid Single", system-ui;
+    font-size: 7em;
+}
+
+.bottom_elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9rem;
+    color: white;
+
+}
+
+.text_elements-left{
+    background-color: rgb(27, 27, 27);
+    padding : 1%;
+    border : 2px solid rgb(43, 43, 43);
+}
+
+
+
+.buttons_right_bottom{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(27, 27, 27);
+    border : 2px solid rgb(43, 43, 43);
+    border-radius: 0%;
+    justify-content: center;
+}
+
+.buttons_right_bottom button{
+    border-radius: 0;
+    margin: 7px;
+    padding: 4px 4px;
+}
