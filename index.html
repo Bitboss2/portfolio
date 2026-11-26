@@ -10,66 +10,66 @@
   </head>
   <body>
     <header>
-      <div id="logo_header">
-        <nav class="menu">
+      <div class="site-header">
+        <nav class="main-nav">
           <ul>
-            <li><a href="#accueil">ACCUEIL</a></li>
+            <li><a href="#home">ACCUEIL</a></li>
             <li><a href="#education">EDUCATION</a></li>
-            <li><a href="#section_expérience">EXPERIENCE</a></li>
-            <li><a href="#infos">INFOS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">INFOS</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="myself" id="accueil">
-      <div id="pannel_view">
+    <section class="intro" id="home">
+      <div class="intro__card">
         <img src="./images/avatar.webp" alt="avatar de Horia Tecuceanu" />
-        <h1>Horia <span class="name-highlight">Tecuceanu</span></h1>
+        <h1>Horia <span class="intro__name-highlight">Tecuceanu</span></h1>
         <p>
           Photographe & passionné de tech — je capture l’instant, puis je le
           peaufine au pixel près.
         </p>
-        <div class="boutton_white">
-          <button onclick="location.href='#section_expérience'">voir mes photos</button>
+        <div class="intro__buttons">
+          <button onclick="location.href='#experience'">voir mes photos</button>
           <button>me contacter</button>
           <button>cv</button>
         </div>
       </div>
     </section>
-    <section class="education" id="education">
+    <section class="split-section" id="education">
       <div class="section-title">Education</div>
-      <div class="my_parcours">
-        <div class="parcours_sco">Pacours scolaire</div>
-        <div class="liste_an">
-          <div class="liste_element">
-            <div class="element">24</div>
+      <div class="list-card">
+        <div class="list-card__title">Pacours scolaire</div>
+        <div class="list-card__items">
+          <div class="list-card__item">
+            <div class="list-card__badge">24</div>
             J'ai fait ma première maquette
           </div>
-          <div class="liste_element">
-            <div class="element">25</div>
+          <div class="list-card__item">
+            <div class="list-card__badge">25</div>
             premier shoot photo
           </div>
-          <div class="liste_element">
-            <div class="element">26</div>
+          <div class="list-card__item">
+            <div class="list-card__badge">26</div>
             J'ai eu mon bac (heureusement)
           </div>
         </div>
       </div>
-      <div class="photos">
+      <div class="photo-card">
         Mes photos
-        <div class="picture_list">
-          <div class="picture_element">
+        <div class="photo-card__grid">
+          <div class="photo-card__item">
             <img src="./images/nyc.webp" alt="image de new york" />
             nyc
           </div>
-          <div class="picture_element">
+          <div class="photo-card__item">
             <img
               src="./images/frost.webp"
               alt="image avec des ronds flous d'un palmier"
             />
             Design
           </div>
-          <div class="picture_element">
+          <div class="photo-card__item">
             <img
               src="./images/biscarosse.webp"
               alt="image d'une plage à biscarosse"
@@ -79,101 +79,101 @@
         </div>
       </div>
     </section>
-    <section id="section_expérience">
-      <div class="section-title black">Expérience</div>
-      <div class="photo_pleine">
-        <div class="big_text_photo">Noël 2025</div>
-        <p class="text_xmas">
+    <section class="experience" id="experience">
+      <div class="section-title section-title--light">Expérience</div>
+      <div class="featured-photo">
+        <div class="featured-photo__title">Noël 2025</div>
+        <p class="featured-photo__text">
           Concours photo du lycée Sainte Marie — une bougie, du bokeh <br />
           et beaucoup de patience.
         </p>
-        <button class="xmas_button">voir la photo →</button>
+        <button class="featured-photo__button">voir la photo →</button>
       </div>
-      <div class="photo_projects">
-        <h2 id="project_text">Projets photo</h2>
-        <div class="column_image">
+      <div class="photo-projects">
+        <h2 class="photo-projects__title">Projets photo</h2>
+        <div class="photo-projects__item">
           <img
             src="./images/lac.webp"
             alt="image d'un magnifique luminaire"
-            class="image_list"
+            class="photo-projects__thumbnail"
           />
-          <div class="text_and_images">
-            <div class="big_text_aside">Mariage d'élodie et Sebastien</div>
-            <div class="small_text_aside">photographie de mariage - 2025</div>
+          <div class="photo-projects__text">
+            <div class="photo-projects__item-title">Mariage d'élodie et Sebastien</div>
+            <div class="photo-projects__item-subtitle">photographie de mariage - 2025</div>
           </div>
         </div>
-        <div class="column_image">
+        <div class="photo-projects__item">
           <img
             src="./images/nyc2.webp"
             alt="image du brooklyn bridge (j'ai trop kiffé mdr)"
-            class="image_list"
+            class="photo-projects__thumbnail"
           />
 
-          <div class="text_and_images">
-            <div class="big_text_aside">Voyage à New York</div>
-            <div class="small_text_aside">Série urbaine - 2025</div>
+          <div class="photo-projects__text">
+            <div class="photo-projects__item-title">Voyage à New York</div>
+            <div class="photo-projects__item-subtitle">Série urbaine - 2025</div>
           </div>
         </div>
-        <div class="column_image">
+        <div class="photo-projects__item">
           <img
             src="./images/bali.webp"
             alt="image du brooklyn bridge (j'ai trop kiffé mdr)"
-            class="image_list"
+            class="photo-projects__thumbnail"
           />
 
-          <div class="text_and_images">
-            <div class="big_text_aside">Voyage à Bali</div>
-            <div class="small_text_aside">Série voyage - 2023</div>
+          <div class="photo-projects__text">
+            <div class="photo-projects__item-title">Voyage à Bali</div>
+            <div class="photo-projects__item-subtitle">Série voyage - 2023</div>
           </div>
         </div>
       </div>
     </section>
-        <section class="education infos" id="infos">
+        <section class="split-section split-section--contact" id="contact">
       <div class="section-title">Informations</div>
-      <div class="my_parcours">
-        <div class="parcours_sco">Me contacter</div>
-        <div class="liste_an">
-          <div class="liste_element">
-            <div class="element">@</div>
+      <div class="list-card">
+        <div class="list-card__title">Me contacter</div>
+        <div class="list-card__items">
+          <div class="list-card__item">
+            <div class="list-card__badge">@</div>
             horiamail@example.com
           </div>
-          <div class="liste_element">
-            <div class="element">ig</div>
+          <div class="list-card__item">
+            <div class="list-card__badge">ig</div>
             horia instagram
           </div>
-          <div class="liste_element">
-            <div class="element">+</div>
+          <div class="list-card__item">
+            <div class="list-card__badge">+</div>
             Shootings, événements & projets web
           </div>
         </div>
       </div>
-      <div class="photos">
+      <div class="photo-card">
         Encore des photos
-        <div class="picture_list section3_picture_list">
-          <div class="picture_element picture_plus">
+        <div class="photo-card__grid photo-card__grid--no-caption">
+          <div class="photo-card__item photo-card__item--no-caption">
             <img src="./images/bouzais.webp" alt="image de fleurs dans un champ" />
           </div>
-          <div class="picture_element picture_plus">
+          <div class="photo-card__item photo-card__item--no-caption">
             <img
               src="./images/white_house.webp"
               alt="image d'un ciel bleu"
             />
           </div>
-          <div class="picture_element picture_plus">
+          <div class="photo-card__item photo-card__item--no-caption">
             <img
               src="./images/restaurant.webp"
               alt="image d'un restaurant paradisiaque devant le lac de navarosse"
             />
           </div>
         </div>
-        <div class="text_bottom_picture">Si vous souhaitez vraiment collaborer avec moi n'hésitez pas et contactez-moi par mail idéalement</div>
+        <div class="photo-card__note">Si vous souhaitez vraiment collaborer avec moi n'hésitez pas et contactez-moi par mail idéalement</div>
       </div>
     </section>
-    <footer>
-      <div id="bottom_text">Horia Tecuceanu</div>
-      <div class="bottom_elements">
-        <div class="text_elements-left">© Tout droits réservés</div>
-        <div class="buttons_right_bottom">
+    <footer class="footer">
+      <div class="footer__name">Horia Tecuceanu</div>
+      <div class="footer__bar">
+        <div class="footer__copyright">© Tout droits réservés</div>
+        <div class="footer__links">
           <button>INSTAGRAM</button>
           <button>lINKEDIN</button>
           <button>GITHUB</button>

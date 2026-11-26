@@ -10,23 +10,23 @@ html {
     scroll-behavior: smooth;
 }
 
-#logo_header {
+.site-header {
     width: 100%;
 }
 
-.menu {
+.main-nav {
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(26, 26, 26);
     border-bottom: 2px solid rgba(252, 248, 248, 0.808);
 }
 
-.menu a {
+.main-nav a {
     color: inherit;
     text-decoration: none;
 }
 
-.menu ul {
+.main-nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -94,7 +94,7 @@ body{
 
 
 
-#pannel_view{
+.intro__card{
     background-color: rgb(29, 29, 29);
     margin-top: 10%;
     margin-bottom: 10%;
@@ -107,17 +107,17 @@ body{
     font-family: "Bitcount Grid Single", system-ui;
 }
 
-#pannel_view h1 {
+.intro__card h1 {
     font-weight: 350;
     font-size: 3rem;
 }
 
-.name-highlight {
+.intro__name-highlight {
     background-color: white;
     color: black;
 }
 
-#pannel_view p {
+.intro__card p {
     text-align: center;
     font-family: "Instrument Serif", serif;
     font-weight: 300;
@@ -176,7 +176,7 @@ button:hover{
 
 
 
-.education {
+.split-section {
     background-color: rgb(241, 241, 234);
     padding: 4%;
     display: grid;
@@ -197,7 +197,7 @@ button:hover{
     text-align: center;
 }
 
-.parcours_sco{
+.list-card__title{
     font-family: "JetBrains Mono", monospace;
     text-align: left;
     padding-left: 1%;
@@ -206,7 +206,7 @@ button:hover{
     font-weight: 170;
 }
 
-.my_parcours{
+.list-card{
     background-color: azure;
     display: flex;
     flex-direction: column;
@@ -221,7 +221,7 @@ button:hover{
     grid-area:leftpart;
 }
 
-.liste_an{
+.list-card__items{
     --year-width: 3rem;
     --year-gap: 1rem;
     flex: 1; /* la liste blanche remplit toute la hauteur restante */
@@ -230,7 +230,7 @@ button:hover{
     background-color: white;
 }
 
-.liste_element{
+.list-card__item{
     flex: 1; /* les 3 lignes se partagent la hauteur à parts égales */
     display: flex;
     flex-direction: row;
@@ -248,16 +248,16 @@ button:hover{
 }
 
 
-.liste_element:hover{
+.list-card__item:hover{
     background-color: rgb(255, 0, 0);
     color: white;
-    .element{
+    .list-card__badge{
         background-color: white;
         color: #000000;
     }
 }
 
-.element{
+.list-card__badge{
     flex: 0 0 var(--year-width);
     background-color: black;
     color: white;
@@ -270,7 +270,7 @@ button:hover{
     font-weight: 280;
 }
 
-.photos{
+.photo-card{
     background-color: black;
     color:white;
     padding: 4%;
@@ -278,19 +278,19 @@ button:hover{
     font-family: "JetBrains Mono", monospace;
     grid-area: rightpart;
     transition: all 0.25s;
-    border: 1px solid rgb(185, 185, 185);
+    border: 1px solid rgb(0, 0, 0);
 }
 
-.photos:hover{
+.photo-card:hover{
     background-color: white;
     color: #000000;
-    .picture_element{
+    .photo-card__item{
         color: #000000;
         border-bottom: 1px solid black;
     }
 }
 
-.picture_list{
+.photo-card__grid{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -299,7 +299,7 @@ button:hover{
     margin-top: 2%;
 }
 
-.picture_element{
+.photo-card__item{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -311,7 +311,7 @@ button:hover{
     border-bottom: 1px solid white;
 }
 
-.picture_element img{
+.photo-card__item img{
     width: 100%;
     height: auto;
 }
@@ -325,7 +325,7 @@ button:hover{
 
 /* section 3 */
 
-#section_expérience{
+.experience{
     padding: 4%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -333,12 +333,12 @@ button:hover{
     'leftpart rightpart';
 }
 
-.black {
+.section-title--light {
     color: white;
 }
 
 
-.photo_pleine{
+.featured-photo{
     position: relative;
     overflow: hidden;
     height: 70vh;
@@ -347,7 +347,7 @@ button:hover{
 }
 
 
-.photo_pleine::before{
+.featured-photo::before{
     content: "";
     position: absolute;
     inset: 0;
@@ -357,11 +357,11 @@ button:hover{
     transition: all 0.5s;
 }
 
-.photo_pleine:hover::before{
+.featured-photo:hover::before{
     filter: blur(1.5rem);
 }
 
-.big_text_photo{
+.featured-photo__title{
     position: absolute;
     left: 3%;
     bottom: 18%;
@@ -370,7 +370,7 @@ button:hover{
     color: white;
 }
 
-.text_xmas{
+.featured-photo__text{
     position: absolute;
     left: 3%;
     bottom: 7%;
@@ -380,7 +380,7 @@ button:hover{
 
 }
 
-.xmas_button{
+.featured-photo__button{
     position: absolute;
     left: 3%;
     bottom: 3%;
@@ -392,7 +392,7 @@ button:hover{
 
 
 
-.photo_projects{
+.photo-projects{
     background-color: rgb(241, 241, 234);
     display: flex;
     flex-direction: column;
@@ -404,11 +404,11 @@ button:hover{
     grid-area: 'rightpart';
 }
 
-#project_text{
+.photo-projects__title{
     padding-left: 4%;
     font-weight: 190;
 }
-.column_image{
+.photo-projects__item{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -422,23 +422,23 @@ button:hover{
     transition: all 0.25s;
 }
 
-.column_image:hover{
+.photo-projects__item:hover{
     background-color: rgb(51, 0, 0);
 }
 
-.big_text_aside{
+.photo-projects__item-title{
     font-family: "Instrument Serif", serif;
     font-size: 1.5rem;
     color: white;
 }
 
-.small_text_aside{
+.photo-projects__item-subtitle{
     font-family: "JetBrains Mono", monospace;
     font-size: 0.8em;
     font-weight: 100;
 }
 
-.image_list{
+.photo-projects__thumbnail{
     width: 20%;
     height: auto;
 }
@@ -446,22 +446,22 @@ button:hover{
 
 /* section 4 (on reprend les éléments de la section 2 en terme de classes car l'arrangement est très similaire) */
 
-.picture_plus{
+.photo-card__item--no-caption{
     border-bottom: none;
 }
 
-.text_bottom_picture{
+.photo-card__note{
     padding-top : 4%;
     font-family: "Instrument Serif", serif;
     font-size: 1.3rem;
 }
 
 
-.infos .my_parcours{
+.split-section--contact .list-card{
     grid-area: rightpart;
 }
 
-.infos .photos{
+.split-section--contact .photo-card{
     grid-area: leftpart;
 }
 
@@ -473,10 +473,9 @@ button:hover{
 
 /* ici on passe au footer. */
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     color : rgb(65, 65, 65);
     margin-bottom: 2%;
     text-align: center;
@@ -485,7 +484,7 @@ footer {
     overflow: hidden; 
 }
 
-#bottom_text {
+.footer__name {
     white-space: nowrap;
     animation: defilement 12s linear infinite;
 }
@@ -495,7 +494,7 @@ footer {
     to   { transform: translateX(100%); }
 }
 
-.bottom_elements{
+.footer__bar{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -505,7 +504,7 @@ footer {
 
 }
 
-.text_elements-left{
+.footer__copyright{
     background-color: rgb(27, 27, 27);
     padding : 1%;
     border : 2px solid rgb(43, 43, 43);
@@ -513,7 +512,7 @@ footer {
 
 
 
-.buttons_right_bottom{
+.footer__links{
     display: flex;
     flex-direction: row;
     background-color: rgb(27, 27, 27);
@@ -522,7 +521,7 @@ footer {
     justify-content: center;
 }
 
-.buttons_right_bottom button{
+.footer__links button{
     border-radius: 0;
     margin: 7px;
     padding: 4px 4px;
@@ -534,7 +533,7 @@ footer {
 
 @media screen and (max-width:1080px){
 
-    .menu ul {
+    .main-nav ul {
         display:flex;
         flex-direction: column;
         gap: 15px;
@@ -543,37 +542,37 @@ footer {
         text-align: center;
     }
 
-    #pannel_view{
+    .intro__card{
         margin-left: 2%;
         margin-right: 2%;
     }
 
-    .education{
+    .split-section{
         display:flex;
         flex-direction: column;
     }
 
-    #section_expérience{
+    .experience{
         display: flex;
         flex-direction: column;
     }
 
-    .big_text_photo{
+    .featured-photo__title{
         bottom: 24%;
     }
-    .bottom_elements{
+    .footer__bar{
         flex-direction: column;
     }
 
-    #bottom_text{
+    .footer__name{
         font-size: 4rem;
     }
 
-    .photo_pleine::before{
+    .featured-photo::before{
     transition: none;
     }
 
-    .photo_pleine:hover::before{
+    .featured-photo:hover::before{
     filter: none;
     }
 
