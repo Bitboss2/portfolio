@@ -244,6 +244,17 @@ button:hover{
     border-top: 1px solid black;
     background-color: white;
     color: black;
+    transition: all 0.25s;
+}
+
+
+.liste_element:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    .element{
+        background-color: white;
+        color: #000000;
+    }
 }
 
 .element{
@@ -266,6 +277,17 @@ button:hover{
     margin: 4%;
     font-family: "JetBrains Mono", monospace;
     grid-area: rightpart;
+    transition: all 0.25s;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.photos:hover{
+    background-color: white;
+    color: #000000;
+    .picture_element{
+        color: #000000;
+        border-bottom: 1px solid black;
+    }
 }
 
 .picture_list{
@@ -318,13 +340,13 @@ button:hover{
 
 .photo_pleine{
     position: relative;
-    overflow: hidden; /* évite que le flou déborde de la zone */
+    overflow: hidden;
     height: 70vh;
     margin: 4%;
     grid-area: 'leftpart';
 }
 
-/* l'image est ici, pour pouvoir la flouter sans flouter le texte */
+
 .photo_pleine::before{
     content: "";
     position: absolute;
@@ -397,7 +419,11 @@ button:hover{
     color: white;
     padding: 4%;
     flex: 1;
+    transition: all 0.25s;
+}
 
+.column_image:hover{
+    background-color: rgb(51, 0, 0);
 }
 
 .big_text_aside{
@@ -456,6 +482,17 @@ footer {
     text-align: center;
     font-family: "Bitcount Grid Single", system-ui;
     font-size: 7em;
+    overflow: hidden; 
+}
+
+#bottom_text {
+    white-space: nowrap;
+    animation: defilement 12s linear infinite;
+}
+
+@keyframes defilement {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(100%); }
 }
 
 .bottom_elements{
