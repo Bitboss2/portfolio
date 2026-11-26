@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #logo_header {
     width: 100%;
 }
@@ -15,6 +19,11 @@ body {
     box-sizing: border-box;
     background-color: rgb(26, 26, 26);
     border-bottom: 2px solid rgba(252, 248, 248, 0.808);
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .menu ul {
@@ -27,6 +36,18 @@ body {
     list-style: none;
     color: white;
     font-family: "JetBrains Mono", monospace;
+}
+
+li{
+    transition: all 0.25s;
+    padding: 5px 20px;
+    border-radius: 25px;
+    
+}
+
+li:hover{
+    background-color: white;
+    color: black;
 }
 
 
@@ -110,9 +131,14 @@ button{
     padding : 2% 4%;
     font-family: "JetBrains Mono", monospace;
     font-size: 0.8rem;
+    transition : all 0.25s;
 
 }
 
+button:hover{
+    background-color: black;
+    color: white;
+}
 
 
 
@@ -292,12 +318,25 @@ button{
 
 .photo_pleine{
     position: relative;
-    background-image: url("./images/noel.webp");
-    background-size: cover;
-    background-position: center;
+    overflow: hidden; /* évite que le flou déborde de la zone */
     height: 70vh;
     margin: 4%;
     grid-area: 'leftpart';
+}
+
+/* l'image est ici, pour pouvoir la flouter sans flouter le texte */
+.photo_pleine::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./images/noel.webp");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+
+.photo_pleine:hover::before{
+    filter: blur(1.5rem);
 }
 
 .big_text_photo{
@@ -456,7 +495,7 @@ footer {
 
 
 
-@media all and (max-width:1080px){
+@media screen and (max-width:1080px){
 
     .menu ul {
         display:flex;
@@ -492,5 +531,14 @@ footer {
     #bottom_text{
         font-size: 4rem;
     }
+
+    .photo_pleine::before{
+    transition: none;
+    }
+
+    .photo_pleine:hover::before{
+    filter: none;
+    }
+
 }
 
